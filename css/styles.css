@@ -1,0 +1,216 @@
+/* --------------- GENERAL COLORS -----------------*/
+
+:root {
+    --background: #fff;
+    --main-color: #232323;
+    --secondary-color:#fecc01;
+    --background-color:#525659;
+}
+
+/* --------------- BACKGROUND -----------------*/
+
+body {
+    display:flex;
+    height: fit-content;
+    width: 100vw;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden ;
+    background-color:var(--background-color);
+}
+
+/* --------------- CV CONTAINER -----------------*/
+
+.wrapper {
+    display:grid;
+    grid-template-columns: 280px 514px;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    background:var(--background);
+}
+
+
+.column {
+    padding-bottom:1.5rem;
+}
+/* --------------- LEFT-SIDE COLUMN -----------------*/
+
+.column:nth-child(1){
+    background-color: var(--main-color);
+}
+
+.personal-data {
+    padding:0 1.5rem;
+}
+
+.photo {
+    color:#fecc01;
+    font-weight: 600;
+}
+
+/* --------------- IMG & DESCRIPTION -----------------*/
+
+.cv-img {
+    min-height: 348px;
+    min-width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.cv-img-description {
+    padding:0 1.5rem;
+}
+
+/* --------------- PERSONAL DATA  --------------- */
+
+.data-block-title {
+    color:var(--background);
+    font-weight: 600;
+}
+
+.list {
+    display:flex;
+    flex-direction: column;
+    justify-content: left;
+    gap: 1rem;
+    list-style: none;
+    padding-left:0;
+}
+
+.list-item {
+    color:var(--background);
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    margin:0;
+    padding:0;
+}
+
+.list-item p {
+    margin:0;
+    padding: 0;
+}
+
+b,i {
+    color:var(--secondary-color);
+    font-weight: bold;
+}
+
+/* --------------- LINE FOR DIVISION OF LEFT-SIDE COLUMN  --------------- */
+
+.personal-data .divisor-line {
+    display:flex;
+    justify-content: right;
+    border: 2px solid var(--secondary-color);
+    width: 108%;
+}
+
+/* --------------- RIGHT-SIDE COLUMN STYLES --------------- */
+
+
+/* --------------- STYLES FOR NAME & JOB BLOCK --------------- */
+.name b {
+    color:var(--main-color);
+    font-weight: bold;
+}
+
+.name h1 {
+    font-weight: 300;
+    margin:0;
+}
+.name h2 {
+    font-weight: 300;
+    color:var(--background);
+    margin:0;
+}
+
+.name {
+    background: var(--secondary-color);
+    text-align:center;
+    margin-top: 5rem;
+    padding: 3rem 0;
+    transform: translate(-1.5rem,0);
+}
+
+.profile-name{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+    width: 100%;
+    gap:1rem;
+}
+
+.profile-name * {
+    margin:0;
+    padding:0;
+}
+
+.profile-job {
+    width: 100%;
+}
+
+/* --------------- GENERAL STYLES FOR PROFESSIONAL DATA --------------- */
+
+.profesional-data {
+    padding:3rem;
+    color:var(--main-color);
+    font-size: 14px;
+    display:flex;
+    flex-direction: column;
+    gap:1rem;
+}
+.profesional-data .divisor-line {
+    display:flex;
+    justify-content: right;
+    border-bottom: 4px solid var(--secondary-color);
+    width: 106%;
+}
+
+/* --------------- ACADEMIC INFO --------------- */
+
+.academic-training *{
+    margin:0;
+    padding:0;
+    color:var(--main-color);
+}
+.a-t-date {
+    font-weight: bold;
+    color:var(--secondary-color);
+}
+.a-t-title {
+    font-weight: 600;
+    padding:0.25rem 0;
+}
+
+/* --------------- PROFESSIONAL INFO --------------- */
+
+.profile-projects *{
+    margin:0;
+    padding:0;
+}
+
+.p-p-date {
+    font-weight: bold;
+    background-color:var(--secondary-color);
+    border-radius:15px;
+    color:var(--main-color);
+    min-width: 15%;
+    max-width: 20%;
+    padding:5px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.p-p-title {
+    font-weight: 600;
+    padding:1rem 0;
+}
